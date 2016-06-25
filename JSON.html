@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<style>
+table, th , td  {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tr:nth-child(odd)	{
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="highcharts.js"></script>
+<script src="highcharts-more.js"></script>
+<script src="util.js"></script>
+<script src="main.js"></script>
+<script src="waitingDialog.js"></script>
+
+
+</head>
+<body>
+		
+<div class="container-fluid">
+<div class="row">
+     <div class="col-md-12" style="background-color: #8DC4D6;
+     font-size: 16px; margin-bottom: 10px; font-weight: bold;display:block;" >
+     <h4 align="center"> <button class="btn btn-primary btn-sm" style="float: left;vertical-align: middle;margin-bottom: 8px">Get Countries</button> Countries Population Vs GDP</h4>
+         
+    </div>
+    </div>
+  <div class="row">
+   <div class="col-md-1">
+   </div>
+    <div class="col-md-5">
+    		<table class="imagetable">
+						<tr>
+							<th>Country</th><th>Population</th><th>Capital</th>
+						</tr>
+                 </table>
+    </div>
+    <div class="col-md-5">
+    	  <div id="chart"></div>
+          <div id="lineChart"></div>
+    </div>
+    <div class="col-md-1">
+   </div>
+ 
+  </div>
+</div>
+<br>
+<br>
+<br>
+</body>
+</html>
